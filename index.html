@@ -57,6 +57,10 @@
             source: "Administrative_Boundary",
             minzoom: 0,
             maxzoom: 16,
+            paint: {
+              "line-color": "#dc143c",
+              "line-gap-width": 5,
+            },
           });
         });
 
@@ -66,8 +70,8 @@
             compact: false,
             customAttribution:
               "Style © <a href='http://openmaptiles.org/'>OpenMapTiles</a> | " +
-              "Data © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a> " +
-              '<a target="_top" rel="noopener" href="https://www.eorc.jaxa.jp/ALOS/jp/index_j.htm">JAXA</a>',
+              "Data © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>," +
+              "国土数値情報（行政区域データ）（国土交通省）（https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v2_3.html）を加工して作成",
           })
         );
       })();
